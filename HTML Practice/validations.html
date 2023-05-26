@@ -6,9 +6,9 @@
                     background-color: rgb(228, 152, 152);
                    
                 }
-             
+              
             </style>
-            <script>
+            <script> 
                 var nm;
                 var dept;
                 var empcode;
@@ -29,8 +29,6 @@
                 }
 
 
-
-
                 function validateEmpCode(){
                     empcode=document.getElementById("ecode").value;
                     if(empcode===" "||empcode.trim().length==0){
@@ -40,12 +38,6 @@
                     document.getElementById("errecode").innerHTML=""
                     return true;
                 }
-
-
-
-
-
-
 
 
 
@@ -62,18 +54,12 @@
                         }
 
 
-
-
                     }
                     document.getElementById("errmess").innerHTML="*please select department"
                     return false;
 
 
-
-
                 }
-
-
 
 
                 function validateAddress(){
@@ -85,8 +71,6 @@
                     document.getElementById("erradd").innerHTML=""
                     return true;
                 }
-
-
 
 
                 function validateTPA(){
@@ -104,30 +88,26 @@
                         return false;
                     }
 
-
                     document.getElementById("errtpa").innerHTML="";
                     courses=courses.slice(0,courses.length-2)
                    
                     return true;
                 }
 
-
                 function validateTNPA(){
                     val=document.getElementById("tnpa").value;
-                   
+                    
                     if(val==="notselected"){
                         document.getElementById("errtnpa").innerHTML="<br>*Select an options";
                         return false;
                     }
                     document.getElementById("errtnpa").innerHTML="";
                     return true;
-                   
+                    
                 }
-               
+                
 
-
-               
-
+                
 
                 function validateData(){
                     var flag=validateDepartment();
@@ -147,14 +127,8 @@
                 }
 
 
-
-
                
             </script>
-
-
-
-
 
 
 
@@ -166,18 +140,14 @@
 
 
 
-
-
-
-
                 <tbody>
                     <tr>
                         <td>Name:</td>
-                        <td><input type="text" name="name" id="name" ><span name="errname" id="errname"  style="color:royalblue" required></span></td>
+                        <td><input type="text" name="name" id="name" ><span name="errname" id="errname" pattern="[A-za-z]" style="color:royalblue" required></span></td>
                     </tr>
                     <tr>
                         <td>Employee code</td>
-                        <td><input type="text" name="ecode" id="ecode" ><span name="errecode" id="errecode"  style="color:royalblue" required></span></td>
+                        <td><input type="text" name="ecode" id="ecode" ><span name="errecode" id="errecode" pattern="[A-za-z]+[0-9]" style="color:royalblue" required></span></td>
                     </tr>
                     <tr>
                         <td>Department</td>
@@ -189,10 +159,6 @@
                             <input type="radio" name="department" id="ACCOUNT" value="ACCOUNT"><label for="ACCOUNT">ACCOUNT</label><br>
                             <span name="errmess" id="errmess" style="color:royalblue"></span>
                         </td>
-
-
-
-
 
 
 
@@ -234,9 +200,7 @@
                     </tr>
 
 
-
-
-                   
+                    
                 </tbody>
                
             </table>
@@ -246,13 +210,7 @@
             <div id="mydiv" >
 
 
-
-
             </div>
-
-
-
-
 
 
 
@@ -260,3 +218,6 @@
         </body>
    
 </html>
+
+
+
