@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            fieldset{
+                border:2px solid blue;
+                background-color: black;
+                color: white;
+                width: 45%;
+                border-radius: 20px;
+            }
+            legend{
+                background-color: blue;
+                color: white;  
+            }
+            table{
+                color: white;
+             
+               
+            }
+            input{
+                background-color: black;
+                color: white;
+            }
+            div{
+                margin-bottom: 10px;
+            }
+            #fill{
+                background-color: blue;
+                color: white;
+            }
+           
+           
+        </style>
+
+
+    </head>
+    <body>
+        <div>
+        <fieldset>
+            <legend>Name and address</legend>
+            <table cellspacing="20px" >
+                <tr>
+                    <td align="right">SSN:</td><td><input type="text" id="ssn" name="ssn"></td><td id="fill">Fill in name and address</td>
+                   
+                </tr>
+                <tr>
+                    <td align="right">Full name:</td><td><input type="text" id="fname" name="fname"></td>
+                   
+                </tr>
+                <tr>
+                    <td align="right">Street and Number:</td><td><input type="taxt" id="san" name="san"></td>
+                   
+                </tr>
+                <tr>
+                    <td align="right">Postal code:</td><td><input type="text" id="pc" name="pc"></td>
+                   
+                </tr>
+                <tr>
+                    <td align="right">City:</td><td><input type="text" id="city" name="city"></td>
+                   
+                </tr>
+
+
+            </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Username and password</legend>
+            <table cellspacing="20px">
+                <tr>
+                    <td>User name:</td><td><input type="text" id="uname" name="uname"></td>
+                </tr><br>
+                <tr>
+                    <td>Password:</td><td><input type="text" id="pwd" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="showpassword" id="showpassword" ><label>Show Password</label></td>
+                </tr>
+            </table>
+
+
+        </fieldset>
+    </div>
+    </body>
+</html>
